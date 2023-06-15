@@ -2,7 +2,7 @@
 
 
 # Resources
-- [My GitHub link]()
+- [My GitHub link](https://github.com/YiningJenny/Coding3.git)
 - [Video presentation(Youtube link)]()
 - [My journal]()
 - [Unity project (and code)]()

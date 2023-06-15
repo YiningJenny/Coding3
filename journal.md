@@ -1,4 +1,4 @@
-# 7/June - Environment setup and basic training
+# 7/June - virtual environment setup and basic trainingm
 - 配置python环境，问了rebacca。可以直接用mini conda 配置环境。
 
 ```conda create -n "coding3Final" python=3.8.13```
@@ -680,3 +680,8 @@ Debug.Log(actions.ContinuousActions[0]);
 ![image](https://github.com/YiningJenny/Coding3/assets/119497753/c4cb4fa1-22bb-47e1-bdd9-f21d37e09709)
  
 - This is part of the console I get from Unity
+
+- To train faster, I duplicate the whole scene and train all the agents together.
+![image](https://github.com/YiningJenny/Coding3/assets/119497753/a8f5eded-b2d6-4d0d-ad75-f7afdcd4e9c8)
+
+

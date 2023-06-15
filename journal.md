@@ -1,4 +1,4 @@
-# 7/June 
+# 7/June - Environment setup and basic training
 - 配置python环境，问了rebacca。可以直接用mini conda 配置环境。
 
 ```conda create -n "coding3Final" python=3.8.13```
@@ -655,4 +655,28 @@ namespace Unity.MLAgents
 }
 ```
 
-ML-agent learning is through reinforcement learning, so it's based on a relatively simple loop of observation where the agent gathers data from its environment, then it makes a decision based on the data that has, and then take an action. If it does the right action then it gets a reward. Basically this is a continuous cycle where the agent grows to learn based on its observations and what actions lead to the highest rewards.
+ML-agent learning is through reinforcement learning, so it's based on a relatively simple loop of observation where the agent gathers data from its environment, then it makes a decision based on the data that has, and then takes an action. If it does the right action then it gets a reward. Basically, this is a continuous cycle where the agent grows to learn based on its observations and what actions lead to the highest rewards.
+
+![image](https://github.com/YiningJenny/Coding3/assets/119497753/6250cfad-5f84-4fb1-b6b1-26937e493816)
+
+- This is the component that attached to my agent. `Discrete` means integer while `Continuous` means float.
+
+- Then I run this in terminal to train the model in virtual space:
+
+`
+(coding3Final) E:\UnityHub\Unity Project\Coding3MLAgent2>mlagents-learn
+`
+
+![image](https://github.com/YiningJenny/Coding3/assets/119497753/2df2f05f-7a76-4f19-9789-ce51b1590f32)
+
+- In Unity:
+
+```C#
+Debug.Log(actions.DiscreteActions[0]); // I have only one branch which means I have one value in this array
+Debug.Log(actions.ContinuousActions[0]);
+```
+- To train it again, I use`(coding3Final) E:\UnityHub\Unity Project\Coding3MLAgent2>mlagents-learn --run-id=Test3` with a new specific ID
+
+![image](https://github.com/YiningJenny/Coding3/assets/119497753/c4cb4fa1-22bb-47e1-bdd9-f21d37e09709)
+ 
+- This is part of the console I get from Unity

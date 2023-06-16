@@ -17,7 +17,7 @@ public class MoveToGoalAgent : Agent  // inherite from agent class instead of Mo
     {
         //transform.localPosition = Vector3.zero; // transform the local position instead of global position
         transform.localPosition = new Vector3(Random.Range(-13f, +13f), 0f, Random.Range(-13f, 13f)); // character starts with a random position
-        targetTransform.localPosition = new Vector3(Random.Range(-13f, +13f), 0f, Random.Range(-13f, 13f)); // character starts with a random position
+        targetTransform.localPosition = new Vector3(Random.Range(-13f, +13f), 0f, Random.Range(-13f, 13f)); // goal starts with a random position
 
     }
 

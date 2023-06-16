@@ -1,5 +1,5 @@
-# Coding3
-
+# Project Description
+I'm aiming to make a project that uses machine learning in Unity to teach the game character to move toward the goal instead of falling off the map.
 
 # Resources
 - [My GitHub link](https://github.com/YiningJenny/Coding3.git)

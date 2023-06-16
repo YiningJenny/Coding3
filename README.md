@@ -3,7 +3,7 @@
 
 # Resources
 - [My GitHub link](https://github.com/YiningJenny/Coding3.git)
-- [My Video presentation (YouTube link)]()
+- [My Video presentation (OneDrive link)](https://artslondon-my.sharepoint.com/:v:/g/personal/y_jiang0220224_arts_ac_uk/ETxXufDhNetMggU7t70LXBoBgcm9m1fTo3sFv-p9aQaJ-Q?e=67F59h)
 - [My journal](https://github.com/YiningJenny/Coding3/blob/main/journal.md)
 - [My Unity project export package(all assets)]()
 - [Online tutorial1](https://youtu.be/zPFU30tbyKs)

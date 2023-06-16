@@ -692,3 +692,12 @@ Debug.Log(actions.ContinuousActions[0]);
 ![image](https://github.com/YiningJenny/Coding3/assets/119497753/88d0263d-dba7-47a4-be90-b4b61c769e9a)
 
 [The training record video](https://artslondon-my.sharepoint.com/:v:/g/personal/y_jiang0220224_arts_ac_uk/EUYFxJcdsU9PqJNtFknwABUBOBPBSdL1PAK1d9D_UMh2rw?e=znUfW1)
+
+- To actually train the character move to the goal instead of moving to a specific position, I use random position to episode both character and goal.
+```C#
+public override void OnEpisodeBegin()
+    {
+        transform.localPosition = new Vector3(Random.Range(-13f, +5f), 0f, Random.Range(13f, 5f)); // character starts with a random position
+        targetTransform.localPosition = new Vector3(Random.Range(-13f, +13f), 0f, Random.Range(-13f, 13f)); // character starts with a random position
+    }
+```

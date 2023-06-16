@@ -1,5 +1,5 @@
 # Project Description
-I'm aiming to make a project that uses machine learning in Unity to teach the game character to move toward the goal instead of falling off the map.
+I'm aiming to make a project that uses machine learning in Unity to teach the game character to move toward the goal instead of falling off the map. To achieve this aim, I use ML-Agents, which is a framework developed by Unity that allows developers to train intelligent agents using machine learning techniques. The framework involves an agent interacting with an environment, receiving feedback or rewards based on its actions, and using that feedback to improve its decision-making capabilities. ML-Agents has various daily applications across different domains like robotics, autonomous vehicles, and video games. In this project I want to explore the ML-agents application in video game.
 
 # Resources
 - [My GitHub link](https://github.com/YiningJenny/Coding3.git)

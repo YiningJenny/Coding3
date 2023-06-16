@@ -6,7 +6,7 @@
 
 ```conda create -n "coding3Final" python=3.8.13```
 
-- Activate conda: (run this everytime before Unity)
+- Activate conda: (run this everytime before launching Unity)
 
 ```(base) C:\Users\dell>conda activate coding3Final```
 
@@ -42,7 +42,6 @@ Debug.Log(actions.DiscreteActions[0]); // I have only one branch which means I h
 Debug.Log(actions.ContinuousActions[0]);
 ```
 
-- The difference between this two is ```DiscreteActions``` outpts integer value while ```ContinuousActions``` outputs float values.
 - To train it again, I use`(coding3Final) E:\UnityHub\Unity Project\Coding3MLAgent2>mlagents-learn --run-id=Test3` with a new specific ID
 - This is part of the console I get from Unity
 
@@ -75,7 +74,7 @@ public override void OnActionReceived(ActionBuffers actions)
     }
 ```
 
-- To let character hit the goal, I add a triggerable collider to the goal. At the same time I also add triggerable colliders to the walls. Everytime when character hits the goal or walls, the floor changes color and game reset(reset but not quit).
+- To let character hit the goal, I add a triggerable collider to the goal. At the same time I also add triggerable colliders to the walls. Everytime when character hits the goal / walls, set reward, the floor changes color and game reset (reset but not quit).
 
 ![image](https://github.com/YiningJenny/Coding3/assets/119497753/969a21f1-0828-4eb1-bd9b-ca9587fe6cdb)
 
@@ -115,7 +114,6 @@ void OnTriggerEnter(Collider other)
         continuousActions[1] = Input.GetAxisRaw("Vertical"); // move X vector with array key
     }
 ```
-#   
 
 ### [First time training video record](https://artslondon-my.sharepoint.com/:v:/g/personal/y_jiang0220224_arts_ac_uk/EXRzcGJKDPhAvRKXo5d5-kgBiscj_4F_kcCcB2LBWNkKvA?e=ktx1Ld)
 
@@ -158,9 +156,9 @@ public override void OnEpisodeBegin()
     }
 ```
 
-### [Second time massively train the model](https://artslondon-my.sharepoint.com/:v:/g/personal/y_jiang0220224_arts_ac_uk/EY_cxt_qrhFDlsue9PVL7PgBU5H00whVw-NIlhJ6da-vVg?e=x5E6Yz)
+### [Second time massively train the model video record (with random position)](https://artslondon-my.sharepoint.com/:v:/g/personal/y_jiang0220224_arts_ac_uk/EY_cxt_qrhFDlsue9PVL7PgBU5H00whVw-NIlhJ6da-vVg?e=x5E6Yz)
 
-- This is my most successful training result, I duplicate the result file into unity and apply to my agent character
+- This is my most successful training result, I duplicate the result file into unity and apply to my agent character as training model.
 
 ![image](https://github.com/YiningJenny/Coding3/assets/119497753/88d0263d-dba7-47a4-be90-b4b61c769e9a)
 
@@ -200,4 +198,4 @@ TensorBoard 2.13.0 at http://localhost:6006/ (Press CTRL+C to quit)
 # In the future
 - __Config__.According to Jasper's advice, I can try to [configure](https://unity-technologies.github.io/ml-agents/Getting-Started/#training-the-environment) my training by specifying a `*.yaml` file when executing the training. I tried to follow the steps but my unity project just crashed once again. I'm sure that it would be benefit to my training if my equipment is able to run it. I plan to try this in the future.
 - __More time and better equipment.__ 
-- __Unity__ I plan to develop the unity project to make it more completed and do something fun. I can think about how to apply it into a game.
+- __Unity.__ I plan to develop the unity project to make it more completed and do something fun. I can think about how to apply it into a game.

@@ -684,4 +684,6 @@ Debug.Log(actions.ContinuousActions[0]);
 - To train faster, I duplicate the whole scene and train all the agents together.
 ![image](https://github.com/YiningJenny/Coding3/assets/119497753/a8f5eded-b2d6-4d0d-ad75-f7afdcd4e9c8)
 
+- I set max step to 1000 in case AI never touches the goal, instead it just simply learn avoid the wall and just stay in palce forever.
+![image](https://github.com/YiningJenny/Coding3/assets/119497753/9fb62b91-a121-4a89-97f6-9363203a95e4)
 

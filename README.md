@@ -9,4 +9,4 @@
 - [Online tutorial1](https://youtu.be/zPFU30tbyKs)
 - [Online tutorial2](https://youtu.be/kEGAMppyWkQ)
 - [ML-agent learning GitHub Resources & Docs](https://github.com/Unity-Technologies/ml-agents.git)
-- [Unity ml-agents pack](https://docs.unity3d.com/Packages/com.unity.ml-agents@2.0/manual/index.html)
+- [Unity ml-agents pack](https://github.com/Unity-Technologies/ml-agents.git?path=com.unity.ml-agents.extensions#release_20)

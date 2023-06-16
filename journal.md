@@ -687,3 +687,6 @@ Debug.Log(actions.ContinuousActions[0]);
 - I set max step to 1000 in case AI never touches the goal, instead it just simply learn avoid the wall and just stay in palce forever.
 ![image](https://github.com/YiningJenny/Coding3/assets/119497753/9fb62b91-a121-4a89-97f6-9363203a95e4)
 
+- This is my training result, I duplicate the file into unity:
+
+![image](https://github.com/YiningJenny/Coding3/assets/119497753/88d0263d-dba7-47a4-be90-b4b61c769e9a)

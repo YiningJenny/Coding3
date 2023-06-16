@@ -9,4 +9,5 @@ I'm aiming to make a project that uses machine learning in Unity to teach the ga
 - [Online tutorial1](https://youtu.be/zPFU30tbyKs)
 - [Online tutorial2](https://youtu.be/kEGAMppyWkQ)
 - [ML-agent learning GitHub Resources & Docs](https://github.com/Unity-Technologies/ml-agents.git)
+- [Unity ML-agents guide](https://unity-technologies.github.io/ml-agents/Getting-Started/#training-the-environment)
 - [Unity ml-agents pack](https://github.com/Unity-Technologies/ml-agents.git?path=com.unity.ml-agents.extensions#release_20)

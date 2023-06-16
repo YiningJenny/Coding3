@@ -10,11 +10,21 @@
 
 ```(base) C:\Users\dell>conda activate coding3Final```
 
-- This is how ```mlagents-learn``` run in conda terminal
+- This is how ```mlagents-learn``` run in conda terminal (I like the Unity Logo shows here)
 
 ![image](https://github.com/YiningJenny/Coding3/assets/119497753/2df2f05f-7a76-4f19-9789-ce51b1590f32)
 
 ![image](https://github.com/YiningJenny/Coding3/assets/119497753/4df3edef-e985-45f5-8f14-89af8fa5a4b2)
+
+- __[Everything in Anaconda terminal on the first day(conclude some errors and solutions)](https://github.com/YiningJenny/Coding3/blob/main/Day1_Terminal.md)__ 
+- The problems I meet are several:
+1. I need specific Python version, torch version and Unity version to work together, otherwise it doesn't work.
+2. The virtual environment should be in the same folder with unity project, otherwise the training results can't be stored.
+3. Seems like I don't need same version ML Agent Package in unity as [ML-Agents Github install](https://github.com/Unity-Technologies/ml-agents/blob/develop/com.unity.ml-agents.extensions/Documentation~/com.unity.ml-agents.extensions.md) says. I'm just using the newest version. (like below)
+
+![image](https://github.com/YiningJenny/Coding3/assets/119497753/45c7ec28-4473-4b6c-b938-94470278e702)
+
+# 15/June - Read the ML-Agents and train the AI
 
 ```C#
 Debug.Log(actions.DiscreteActions[0]);
@@ -23,65 +33,9 @@ Debug.Log(actions.ContinuousActions[0]);
 
 The difference between this two is ```DiscreteActions``` outpts integer value while ```ContinuousActions``` outputs float values.
 
-- 第一天terminal里所有：
+- I'm using ML-agent model, here is [the definition of agent class]().
 
 
-# 15/June - Read and Understand the model
-I'm using ML-agent model, here is the definition of agent class:
-
-```C#
-#region Assembly Unity.ML-Agents, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-// E:\UnityHub\Unity Project\Coding3MLAgent2\Library\ScriptAssemblies\Unity.ML-Agents.dll
-#endregion
-
-using System.Collections.ObjectModel;
-using Unity.Barracuda;
-using Unity.MLAgents.Actuators;
-using Unity.MLAgents.Policies;
-using Unity.MLAgents.Sensors;
-using UnityEngine;
-using UnityEngine.Serialization;
-
-namespace Unity.MLAgents
-{
-    [HelpURL("https://github.com/Unity-Technologies/ml-agents/blob/release_17_docs/docs/Learning-Environment-Design-Agents.md")]
-    [RequireComponent(typeof(BehaviorParameters))]
-    public class Agent : MonoBehaviour, ISerializationCallbackReceiver, IActionReceiver, IHeuristicProvider
-    {
-        [FormerlySerializedAs("maxStep")]
-        [HideInInspector]
-        public int MaxStep;
-
-        public Agent();
-
-        public int StepCount { get; }
-        public int CompletedEpisodes { get; }
-
-        protected static float ScaleAction(float rawAction, float min, float max);
-        public void AddReward(float increment);
-        public virtual void CollectObservations(VectorSensor sensor);
-        public void EndEpisode();
-        public void EpisodeInterrupted();
-        public float GetCumulativeReward();
-        public ReadOnlyCollection<float> GetObservations();
-        public ActionBuffers GetStoredActionBuffers();
-        public virtual void Heuristic(in ActionBuffers actionsOut);
-        public virtual void Initialize();
-        public void LazyInitialize();
-        public virtual void OnActionReceived(ActionBuffers actions);
-        public void OnAfterDeserialize();
-        public void OnBeforeSerialize();
-        public virtual void OnEpisodeBegin();
-        public void RequestAction();
-        public void RequestDecision();
-        public void SetModel(string behaviorName, NNModel model, InferenceDevice inferenceDevice = InferenceDevice.Default);
-        public void SetReward(float reward);
-        public virtual void WriteDiscreteActionMask(IDiscreteActionMask actionMask);
-        protected virtual void OnDisable();
-        protected virtual void OnEnable();
-    }
-}
-```
 
 ML-agent learning is through reinforcement learning, so it's based on a relatively simple loop of observation where the agent gathers data from its environment, then it makes a decision based on the data that has, and then takes an action. If it does the right action then it gets a reward. Basically, this is a continuous cycle where the agent grows to learn based on its observations and what actions lead to the highest rewards.
 

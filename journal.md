@@ -701,3 +701,34 @@ public override void OnEpisodeBegin()
         targetTransform.localPosition = new Vector3(Random.Range(-13f, +13f), 0f, Random.Range(-13f, 13f)); // character starts with a random position
     }
 ```
+
+- At last I run this in anaconda terminal to see the training results visualization:
+```
+
+(base) C:\Users\dell>cd../..
+
+(base) C:\>e:
+
+(base) E:\>cd E:\MScTerm3\Coding3\Coding3MLAgent3
+
+(base) E:\MScTerm3\Coding3\Coding3MLAgent3>conda activate venv
+
+(venv) E:\MScTerm3\Coding3\Coding3MLAgent3>tensorboard --logdir results
+TensorFlow installation not found - running with reduced feature set.
+Serving TensorBoard on localhost; to expose to the network, use a proxy or pass --bind_all
+TensorBoard 2.13.0 at http://localhost:6006/ (Press CTRL+C to quit)
+```
+
+- The Cumulative reward here shows that the training result is getting better.
+
+![image](https://github.com/YiningJenny/Coding3/assets/119497753/a1cf1030-a34a-4d59-ba78-9f6920fea7d9)
+
+- Additionally, the episode length is hardly going down which means AI is not learning how to get the goal faster.
+
+![image](https://github.com/YiningJenny/Coding3/assets/119497753/65bbd29d-541f-464a-b872-6f99b7d552c6)
+
+- Inner works of AI:
+
+![image](https://github.com/YiningJenny/Coding3/assets/119497753/220d64a8-7d63-4bc2-8c59-6874547a44e6)
+
+

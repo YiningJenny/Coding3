@@ -690,3 +690,5 @@ Debug.Log(actions.ContinuousActions[0]);
 - This is my training result, I duplicate the file into unity:
 
 ![image](https://github.com/YiningJenny/Coding3/assets/119497753/88d0263d-dba7-47a4-be90-b4b61c769e9a)
+
+[The training record video](https://artslondon-my.sharepoint.com/:v:/g/personal/y_jiang0220224_arts_ac_uk/EUYFxJcdsU9PqJNtFknwABUBOBPBSdL1PAK1d9D_UMh2rw?e=znUfW1)

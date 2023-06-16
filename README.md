@@ -7,7 +7,7 @@ I'm aiming to make a project that uses machine learning in Unity to teach the ga
 - [My journal](https://github.com/YiningJenny/Coding3/blob/main/journal.md)
 - [Other video record inprogress](https://artslondon-my.sharepoint.com/:f:/g/personal/y_jiang0220224_arts_ac_uk/EmcE705Zkv1Pu0cx1cifdXABxE4NwQpMXZGr05RThwR3cA?e=e6ETRr)
 - [My readable Unity code](https://github.com/YiningJenny/Coding3/blob/main/MoveToGoalAgent.cs)
-- [My Unity project export package(all assets)](https://artslondon-my.sharepoint.com/:u:/g/personal/y_jiang0220224_arts_ac_uk/EfOpmaCP5LlKkMopIOAwslsBC59IqAq2R9c6Y1gQI1vTJQ?e=B5VOL3)
+- [My original work (Unity project)](https://artslondon-my.sharepoint.com/:u:/g/personal/y_jiang0220224_arts_ac_uk/EfOpmaCP5LlKkMopIOAwslsBC59IqAq2R9c6Y1gQI1vTJQ?e=B5VOL3)
 - [Online tutorial1](https://youtu.be/zPFU30tbyKs)
 - [Online tutorial2](https://youtu.be/kEGAMppyWkQ)
 - [ML-agent learning GitHub Resources & Docs](https://github.com/Unity-Technologies/ml-agents.git)
